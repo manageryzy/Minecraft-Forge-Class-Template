@@ -162,4 +162,13 @@ public class /*!var.item.class*/MyItem/**/ extends Item{
 		super.onUsingTick(stack, player, count);
 	}
 	/*&*/
+	
+	/*& setDamage */
+	@Override
+	public void setDamage(ItemStack stack, int damage) {
+		super.setDamage(stack, damage);
+		
+		//TODO: Edit Your Own Code Here.
+	}
+	/*&*/
 }
