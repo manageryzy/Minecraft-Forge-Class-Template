@@ -11,7 +11,7 @@
  * */
 
 
-package /*!var.mod.package.mod*/modgen.mod/**/;
+package /*!var.mod.package*/modgen.mod/**/;
 
 
 import net.minecraft.client.settings.GameSettings;
