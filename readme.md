@@ -11,7 +11,7 @@ I just want to create an easy-using framework for Minecraft Forge.This is the te
 
 What could I do for this project
 ------
-Contribute code for the project.
-Open issue for BUGs or new features.
-Donate for this project.
-Start or share this project.
+Contribute code for the project.<br>
+Open issue for BUGs or new features.<br>
+Donate for this project.<br>
+Start or share this project.<br>

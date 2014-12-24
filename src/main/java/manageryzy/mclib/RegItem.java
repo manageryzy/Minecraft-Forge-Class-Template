@@ -64,6 +64,14 @@ public class RegItem {
 		return this;
 	}
 	
+	
+	public RegItem SetExistItem(Item item)
+	{
+		theItem = item;
+		
+		return this;
+	}
+	
 	/**
 	 * <b>The text below is from Minecraft Forge!</b><br>
      * Register the specified Item with a mod specific name : overrides the standard type based name.
