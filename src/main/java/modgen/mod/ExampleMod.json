@@ -8,7 +8,7 @@
 		"minecraftversion":{
 			"type":"string",
 			"default":"",
-			"impotrant":"false",
+			"necessary":"false",
 			"comment":
 			[			       
 			    "The acceptable range of minecraft versions that this mod will load and run in The default ",
@@ -19,7 +19,7 @@
 		"remoteversion":{
 			"type":"string",
 			"default":"",
-			"important":"false",
+			"necessary":"false",
 			"comment":
 			[
 			    "A replacement for the no-longer-existing \"versionRange\" of NetworkMod. Specify a ",
@@ -33,7 +33,7 @@
 		"saveversion":{
 			"type":"string",
 			"default":"",
-			"important":"false",
+			"necessary":"false",
 			"comment":[
 				"A version range specifying compatible save version information. If your mod follows good",
 				"version numbering practice Like this (http://semver.org/) then this should be sufficient.",
@@ -44,7 +44,7 @@
 		"canbedeactived":{
 			"type":"bool",
 			"default":"false",
-			"important":"false",
+			"necessary":"false",
 			"comment":
 			[
 				"If your mod doesn't have a runtime persistent effect on the state of the game, and can be ",
@@ -59,7 +59,7 @@
 		"dependencies":{
 			"type":"string",
 			"default":"",
-			"important":"false",
+			"necessary":"false",
 			"comment":
 			[
 			 	"A simple dependency string for this mod (see modloader's \"priorities\" string specification)"
@@ -68,7 +68,7 @@
 		"modid":{
 			"type":"string",
 			"default":"examplemod",
-			"important":"true",
+			"necessary":"true",
 			"comment":
 			[
 			 	"The unique mod identifier for this mod"
@@ -77,7 +77,7 @@
 		"version":{
 			"type":"string",
 			"default":"1.0",
-			"important":"true",
+			"necessary":"true",
 			"comment":
 			[
 			 	"A version string for this mod"
@@ -86,7 +86,7 @@
 		"name":{
 			"type":"string",
 			"default":"ExampleMod",
-			"important":"true",
+			"necessary":"true",
 			"comment":
 			[
 			 	"A user friendly name for the mod"

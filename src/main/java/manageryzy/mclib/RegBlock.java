@@ -96,9 +96,10 @@ public class RegBlock
 		return this;
 	}
 	
-	public RegBlock setBlockUnbreakable()
+	public RegBlock setBlockUnbreakable(boolean isUnbreakable)
 	{
-		theBlock.setBlockUnbreakable();
+		if(isUnbreakable)
+			theBlock.setBlockUnbreakable();
 		
 		return this;
 	}

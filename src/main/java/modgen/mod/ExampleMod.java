@@ -41,7 +41,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 	useMetadata = false,
 	modLanguage = "java",
 	acceptedMinecraftVersions = /*!var.mod.minecraftversion*/""/**/,
-	acceptableRemoteVersions =/*!var.mod.remoteversion*/""/**/,
+	acceptableRemoteVersions =/*!var.mod.remoteversion*/"*"/**/,
 	acceptableSaveVersions = /*!var.mod.saveversion*/""/**/,
 	canBeDeactivated = /*!var.mod.canbedeactived*/false/**/,
 	dependencies = /*!var.mod.dependencies*/""/**/)
@@ -51,7 +51,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     public static final String VERSION = /*!var.mod.version*/"1.0"/**/;
     public static final String NAME = "ExampleMod";
     
-    /*&OnPreInit*/
+    /*& OnPreInit*/
     /**
      * The Forge pre-init event.
      * 
@@ -66,13 +66,15 @@ public class /*!var.mod.class*/ExampleMod/**/
     public void OnFoegePreInit(FMLPreInitializationEvent event)
     {
     	/*! gen.mod.hook.OnPreInit*/
+    	Register.BlockRegister();
+    	Register.ItemRegister();
     	/**/
     	
     	//TODO: add your own code here
     }
     /*&*/
     
-    /*&OnInit*/
+    /*& OnInit*/
     /**
      * The Forge initialize event.
      * 
@@ -93,7 +95,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     }
     /*&*/
     
-    /*&OnPostInit*/
+    /*& OnPostInit*/
     /**
      * The Forge Post Initialize Event
      * This Event Will be Fired at the Last stage of Initialize 
@@ -110,7 +112,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     }
     /*&*/
     
-    /*&OnLoadFinish*/
+    /*& OnLoadFinish*/
     /**
      * The Forge Load Complete Event.
      * Actually , this event is really useless unless you want to 
@@ -127,7 +129,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     }
     /*&*/
     
-    /*&OnServerAboutToStart*/
+    /*& OnServerAboutToStart*/
     /**
      * This event will be fired before server start.
      * Only the ServerSide will receive this event.
@@ -143,7 +145,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     }
     /*&*/
     
-    /*&OnServerStarted*/
+    /*& OnServerStarted*/
     /**
      * This event will be fired when server started.
      * Only the ServerSide will receive the event.
@@ -159,7 +161,7 @@ public class /*!var.mod.class*/ExampleMod/**/
     }
     /*&*/
     
-    /*&OnServerStarting*/
+    /*& OnServerStarting*/
     /**
      * This event will be fire while starting server.
      * Only the ServerSide will receive this event.

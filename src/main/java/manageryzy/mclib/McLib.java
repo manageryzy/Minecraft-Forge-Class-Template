@@ -14,5 +14,13 @@ public class McLib {
 	
 	static RegItem RegisterItem = new RegItem();
 
+	public static RegBlock getRegisterBlock()
+	{
+		return RegisterBlock;
+	}
 	
+	public static RegItem getRegisterItem()
+	{
+		return RegisterItem;
+	}
 }

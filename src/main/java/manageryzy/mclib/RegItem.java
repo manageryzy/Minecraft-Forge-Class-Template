@@ -9,9 +9,11 @@
 package manageryzy.mclib;
 
 import cpw.mods.fml.common.registry.GameData;
+import cpw.mods.fml.common.registry.GameData.GameDataSnapshot;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.world.GameRules;
 
 /**
  * This class is the wrapper class of the Original Minecraft Item Class.
@@ -83,6 +85,19 @@ public class RegItem {
 	public void Reg(String name,String modId)
 	{
 		GameRegistry.registerItem(theItem, name, modId);
+	}
+	
+	/**
+	 * <b>The text below is from Minecraft Forge!</b><br>
+     
+     * Register an item with the item registry with a custom name : this allows for easier server->client resolution
+     *
+     * @param item The item to register
+     * @param name The mod-unique name of the item
+     */
+	public void Reg(String name)
+	{
+		GameRegistry.registerItem(theItem, name);
 	}
 	
 	/**
@@ -159,7 +174,8 @@ public class RegItem {
 		case "tabTransport":
 			table = CreativeTabs.tabTransport;
 			break;
-			
+		default:
+				
 		}
 		
 		theItem.setCreativeTab(table);
